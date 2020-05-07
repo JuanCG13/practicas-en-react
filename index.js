@@ -5,14 +5,14 @@ import './style.css';
 
 var nombre = 'Juan Jesus Cubells'
 
-function A(){
-  return <p> hola {nombre} eres beutiful</p>;
+function A(props){
+  return <p> hola {props.nombre} eres beutiful</p>;
 }
-function B(){
-  return <p> hola bebis </p>;
+function B(props){
+  return <p> hola bebis {props.nombre} </p>;
 }
-function C(){
-  return <p> hola bebis </p>;
+function C(props){
+  return <p> hola bebis {props.nombre} </p>;
 }
 
 class Componenteclass extends Component{
@@ -30,9 +30,10 @@ class App extends Component {
   }
 
   render() {
+    var nombre = 'Sabrina Carpenter';
     return (
       <div>
-        < A />
+        < A nombre={nombre}/>
       </div>
     );
   }
