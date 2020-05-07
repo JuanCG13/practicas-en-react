@@ -3,7 +3,15 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
 
-function Micomp(){
+var nombre = 'Juan Jesus Cubells'
+
+function A(){
+  return <p> hola {nombre} eres beutiful</p>;
+}
+function B(){
+  return <p> hola bebis </p>;
+}
+function C(){
   return <p> hola bebis </p>;
 }
 
@@ -24,7 +32,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        < Micomp />
+        < A />
       </div>
     );
   }
