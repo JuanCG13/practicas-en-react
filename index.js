@@ -3,11 +3,11 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
 
-function micomp(){
+function Micomp(){
   return <p> hola bebis </p>;
 }
 
-class componenteclass extends Component{
+class Componenteclass extends Component{
   render(){
     return <p> hola mundo</p>;
   }
@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        < componenteclass />
+        < Micomp />
       </div>
     );
   }
