@@ -6,7 +6,9 @@ import './style.css';
 var nombre = 'Juan Jesus Cubells'
 
 function A(props){
-  return <p> hola {props.nombre} eres beutiful</p>;
+  return <p> hola {props.nombre} eres beutiful {props.children}</p>;
+  console.log(props.children)
+
 }
 function B(props){
   return <p> hola bebis {props.nombre} </p>;
@@ -33,7 +35,9 @@ class App extends Component {
     var nombre = 'Sabrina Carpenter';
     return (
       <div>
-        < A nombre={nombre}/>
+        < A nombre={nombre}> 
+          <p> hola muchacho</p>
+        </A>
       </div>
     );
   }
