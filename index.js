@@ -18,7 +18,7 @@ class Componente extends Component {
     return(
       <div>
         <p>{this.state.contador}</p>
-        <button onclick="aumentar()"> Presioname </button>
+        <button onclick="aumentar()"> ookkkkokok </button>
       </div> 
     )
   }
