@@ -3,25 +3,28 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
 
-var nombre = 'Juan Jesus Cubells'
+class Componente extends Component {
 
-function A(props){
-  return <p> hola {props.nombre} eres beutiful {props.children}</p>;
-  console.log(props.children)
+  constructor(props){
+    super(props);
 
-}
-function B(props){
-  return <p> hola bebis {props.nombre} </p>;
-}
-function C(props){
-  return <p> hola bebis {props.nombre} </p>;
-}
+    this.state = {
+      contador: 0
+    }
+  }
 
-class Componenteclass extends Component{
   render(){
-    return <p> hola mundo</p>;
+
+    return(
+      <div>
+        <p>{this.state.contador}</p>
+        <button onclick="aumentar()"> Presioname </button>
+      </div> 
+    )
   }
 }
+
+
 
 class App extends Component {
   constructor() {
@@ -32,12 +35,10 @@ class App extends Component {
   }
 
   render() {
-    var nombre = 'Sabrina Carpenter';
+    
     return (
       <div>
-        < A nombre={nombre}> 
-          <p> hola muchacho</p>
-        </A>
+       <Componente/>
       </div>
     );
   }
